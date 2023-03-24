@@ -110,8 +110,6 @@ const deleteNoteByIdHandler = (request, h) => {
     }).code(404);
   }
 
-  console.log(index);
-
   notes.splice(index, 1);
   return h.response({
     status: 'success',
